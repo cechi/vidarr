@@ -1,0 +1,11 @@
+services:
+  vidarr:
+    build: .
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./vidarr.yaml:/etc/vidarr/vidarr.yaml:ro
+      # Mount your video directories here:
+      # - /path/to/videos1:/mnt/data1:ro
+      # - /path/to/videos2:/mnt/data2:ro
+    restart: unless-stopped

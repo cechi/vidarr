@@ -1,0 +1,11 @@
+sources:
+  - name: main
+    access_token: "123"
+    directories:
+      - /mnt/data1
+      - /mnt/data2
+  - name: secondary
+    access_token: "456"
+    directories:
+      - /mnt/data3
+      - /mnt/data4
